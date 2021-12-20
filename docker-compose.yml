@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+    php:
+        container_name: robot-php
+        build: .
+        ports:
+            - "9000:9001"
+        volumes:
+            - .:/var/www/robot:cached
